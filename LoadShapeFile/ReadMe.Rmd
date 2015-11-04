@@ -11,10 +11,33 @@ output: html_document
 
 fileLayers
 
-[1] "USA_adm1"
-attr(,"driver")
-[1] "ESRI Shapefile"
-attr(,"nlayers")
+[1] "USA_adm1" attr(,"driver")
+[1] "ESRI Shapefile" attr(,"nlayers")
 [1] 1
 
 The first attribute is the layer name we use to load the shape file
+
+### Examine the fileInfo variable
+
+fileInfo
+
+Source: "/Users/mackertd/GeoSpatial/USA_adm/USA_adm1.shp", layer: "USA_adm1"
+Driver: ESRI Shapefile; number of rows: 52 
+Feature type: wkbPolygon with 2 dimensions
+Extent: (-179.1506 18.90986) - (179.7734 72.6875)
+CRS: +proj=longlat +datum=WGS84 +no_defs  
+LDID: 0 
+Number of fields: 9 
+       name type length typeName
+1      ID_0    0     10  Integer
+2       ISO    4      3   String
+3    NAME_0    4     75   String
+4      ID_1    0     10  Integer
+5    NAME_1    4     75   String
+6    TYPE_1    4     50   String
+7 ENGTYPE_1    4     50   String
+8 NL_NAME_1    4     50   String
+9 VARNAME_1    4    150   String
+
+This variable provides a lot of information about the shape file to include the projection and the field names
+
