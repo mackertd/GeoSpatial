@@ -1,0 +1,20 @@
+---
+title: "Load Shape File Example"
+author: "Donald Mackert"
+date: "November 3, 2015"
+output: html_document
+---
+
+# Try the following at the R Console
+
+### Examine the fileLayers variable
+
+fileLayers
+
+[1] "USA_adm1"
+attr(,"driver")
+[1] "ESRI Shapefile"
+attr(,"nlayers")
+[1] 1
+
+The first attribute is the layer name we use to load the shape file
